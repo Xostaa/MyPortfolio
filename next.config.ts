@@ -1,8 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    domains: ['images.unsplash.com'], 
+   images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        pathname: '/images/**', // опционально
+      },
+      {
+        protocol: 'https', 
+        hostname: 'cdn.example.org',
+      },
+    ],
   },
   experimental: {
     optimizeCss: true, 
