@@ -6,6 +6,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BiSolidUser, BiFile } from "react-icons/bi";
 import { TiHome } from "react-icons/ti";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import Dragging from "../Animation/Dragging";
+
 export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function NavBar() {
       <Navbar>
         <Container>
           <Navbar.Brand className="navbar-nav" href="#home">
-            Navbar
+            Logo
           </Navbar.Brand>
           <Nav className="ms-auto">
             {isMobile ? (

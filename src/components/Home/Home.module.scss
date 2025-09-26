@@ -1,0 +1,55 @@
+.content {
+   border: solid black 1px;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid black 2px;
+    padding: 1em;
+}
+
+.imagebox {
+    margin-left: auto;
+}
+
+.imgProgramis {
+    @media (max-width: 750px) {
+        width: 400 * 0.9;
+        height: 400* 0.9;
+    }
+
+    @media (max-width: 650px) {
+        width: 400 * 0.8;
+        height: 400* 0.8;
+    }
+
+    @media (max-width: 550px) {
+        width: 400 * 0.7;
+        height: 400* 0.7;
+    }
+    @media (max-width: 450px) {
+        width: 400 * 0.6;
+        height: 400* 0.6;
+    }
+     @media (max-width: 350px) {
+        width: 400 * 0.5;
+        height: 400* 0.5;
+    }
+     @media (max-width: 250px) {
+        width: 400 * 0.4;
+        height: 400* 0.4;
+    }
+    @media (max-width: 150px) {
+        width: 400 * 0.3;
+        height: 400* 0.3;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

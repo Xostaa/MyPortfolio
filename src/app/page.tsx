@@ -1,11 +1,13 @@
-import Image from "next/image";
 import NavBar from "@/components/NavBar/NavBar";
-import Carousel from "@/components/Main.tsx/Carousel";
-export default function Home() {
+import Home from "@/components/Home/Home";
+import { Container } from "@/components/Container/Container";
+export default function App() {
   return (
     <>
-    <NavBar/>
-    
+      <NavBar />
+      <Container>
+        <Home/>
+      </Container>
     </>
   );
 }
